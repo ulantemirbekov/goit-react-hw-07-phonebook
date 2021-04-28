@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router';
 import AppBar from './components/ViewsComponents/AppBar';
 import { getCurrentUser } from './redux/authRedux/authOperations'
-import PublicRoute from './components/RoutsServis/PublicRoute';
-import PrivateRoute from './components/RoutsServis/PrivateRoute';
+import PublicRoute from './components/Routes/PublicRoute';
+import PrivateRoute from './components/Routes/PrivateRoute';
 import { TouchBallLoading } from 'react-loadingg';
 
 const HomePage = lazy(() => import('./components/Views/HomePage'))
