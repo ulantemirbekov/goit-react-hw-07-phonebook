@@ -41,8 +41,8 @@ export const logOut = () => async dispatch => {
 
   await axios
     .post('/users/logout')
-    .then(() => setToken(''))
     .then(() => dispatch(actions.logoutSuccess()))
+    .then(() => setToken(''))
     .catch(error => dispatch(actions.logoutRequest(error.message)));
 };
 
